@@ -10,11 +10,8 @@
     "lint": "eslint **/*.js --ignore-pattern node_modules/",
     "build": "npm run clean && webpack --mode production"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cjdeleon62/react-starter.git"
-  },
-  "author": "",
+  "repository": "git+https://github.com/cjdeleon62/react-starter.git",
+  "author": "Christopher De Leon <cdeleon@forbes.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/cjdeleon62/react-starter/issues"
