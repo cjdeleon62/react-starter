@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "clean": "rimraf dist",
     "dev": "npm run clean && webpack-dev-server --mode development --hot --env.NODE_ENV=development",
     "lint": "eslint **/*.js --ignore-pattern node_modules/",
@@ -16,10 +16,14 @@
   "bugs": {
     "url": "https://github.com/cjdeleon62/react-starter/issues"
   },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./setupTests.js"
+  },
   "homepage": "https://github.com/cjdeleon62/react-starter#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
+    "babel-jest": "23.0.1",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
@@ -32,8 +36,10 @@
     "eslint-plugin-react": "^7.9.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.1.0",
     "node-sass": "^4.9.0",
     "postcss-loader": "^2.1.5",
+    "react-test-renderer": "^16.4.1",
     "rimraf": "^2.6.2",
     "sass-loader": "^7.0.2",
     "style-loader": "^0.21.0",
@@ -45,6 +51,8 @@
   "dependencies": {
     "autoprefixer": "^8.6.0",
     "cross-env": "^5.1.6",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "prop-types": "^15.6.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0"
