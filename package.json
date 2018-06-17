@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "test:coverage": "rimraf cov && npm run test",
     "clean": "rimraf dist",
     "dev": "npm run clean && webpack-dev-server --mode development --hot --env.NODE_ENV=development",
     "lint": "eslint **/*.js --ignore-pattern node_modules/",
@@ -17,7 +18,14 @@
     "url": "https://github.com/cjdeleon62/react-starter/issues"
   },
   "jest": {
-    "setupTestFrameworkScriptFile": "./setupTests.js"
+    "setupTestFrameworkScriptFile": "./setupTests.js",
+    "collectCoverage": true,
+    "coverageDirectory": "cov",
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/vendor/**"
+    ]
   },
   "homepage": "https://github.com/cjdeleon62/react-starter#readme",
   "devDependencies": {
