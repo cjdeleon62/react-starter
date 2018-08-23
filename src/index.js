@@ -1,13 +1,14 @@
 import React from 'react';
 import { render } from 'react-dom';
-import HelloComponent from 'components/HelloComponent';
+// import HelloComponent from 'components/HelloComponent';
+import HeaderComponent from 'components/header/HeaderComponent';
+import LanderComponent from './components/lander/LanderComponent';
 import './styles/style.scss';
 
-const helloWorldText = 'Hello World';
-
 const App = () => (
-  <div>
-    <HelloComponent text={helloWorldText} />
+  <div className="root">
+    <HeaderComponent />
+    <LanderComponent />
   </div>
 );
 

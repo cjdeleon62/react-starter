@@ -1,0 +1,14 @@
+.lander {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  padding-top: calc(3rem + .5vmin);
+
+  .lander__text {
+    font-size: calc(1.5rem + .5vmin);
+    text-align: center;
+    max-height: 100%;
+    width: 80vw;
+  }
+}
