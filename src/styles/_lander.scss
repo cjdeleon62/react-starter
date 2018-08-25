@@ -1,13 +1,36 @@
 .lander {
-  align-items: center;
-  display: flex;
   height: 100vh;
-  justify-content: center;
 
   .lander__text {
-    font-size: calc(1.5rem + .5vmin);
     text-align: center;
     max-height: 100%;
     width: 80vw;
+    margin: 0 auto;
+  }
+
+  .lander__profile--container {
+    max-width: 400px;
+    min-width: 320px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: calc(3rem + 2vw);
+
+    &:before {
+      content: "";
+      display: block;
+      padding-top: 74%;
+    }
+
+    .lander__profile--image {
+      background-image: url("https://upload.wikimedia.org/wikipedia/en/5/5f/Original_Doge_meme.jpg");
+      background-size: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
   }
 }

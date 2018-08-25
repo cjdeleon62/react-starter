@@ -2,7 +2,10 @@ import React from 'react';
 
 const LanderComponent = () => (
   <section className="lander">
-    <div className="lander__text">
+    <div className="lander__profile--container">
+      <div className="lander__profile--image"></div>
+    </div>
+    <div className="lander__text text__lg">
       Spicy jalapeno biltong turducken cupim spare ribs short
       ribs jerky, pork belly chicken pastrami shankle drumstick venison.
       Shank venison strip steak shoulder kevin tenderloin ham short

@@ -10,6 +10,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  background-color: $background-light;
 }
 
 a {
@@ -28,4 +29,24 @@ ul {
 
 section {
   padding: calc(3rem + .5vmin) 1rem 0;
+}
+
+.text__xl {
+  font-size: calc(2rem + .5vmin);
+}
+
+.text__lg {
+  font-size: calc(1.5rem + .5vmin);
+}
+
+.text__md {
+  font-size: calc(1rem + .5vmin);
+}
+
+.text__sm {
+  font-size: calc(.75rem + .5vmin);
+}
+
+.text__xs {
+  font-size: calc(.5rem + .5vmin);
 }
