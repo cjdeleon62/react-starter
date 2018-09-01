@@ -1,36 +1,34 @@
 .lander {
   height: 100vh;
 
+  .lander__jumbo {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: calc(11rem + 1vw);
+  }
+
   .lander__text {
     text-align: center;
     max-height: 100%;
     width: 80vw;
+    margin: 2rem auto 1rem;
+  }
+
+  .lander__links {
+    max-height: 100%;
+    text-align: center;
     margin: 0 auto;
   }
 
-  .lander__profile--container {
-    max-width: 400px;
-    min-width: 320px;
-    width: 100%;
-    position: relative;
-    margin: 0 auto;
-    margin-top: calc(3rem + 2vw);
+  .lander__button {
+    padding: .5rem;
+    border-radius: .375rem;
+    border-color: transparent;
+    margin: 1rem 0;
+    cursor: pointer;
+  }
 
-    &:before {
-      content: "";
-      display: block;
-      padding-top: 74%;
-    }
-
-    .lander__profile--image {
-      background-image: url("https://upload.wikimedia.org/wikipedia/en/5/5f/Original_Doge_meme.jpg");
-      background-size: 100%;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-    }
+  .lander__button--my-works {
+    margin-right: 1rem;
   }
 }
