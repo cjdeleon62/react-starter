@@ -15,7 +15,7 @@ const HeaderComponent = () => (
           <Link to="/about">About</Link>
         </li>
         <li className="header__link">
-          <Link to="/my-works">Experiments</Link>
+          <Link to="/my-works">My Works</Link>
         </li>
         <li className="header__link">
           <Link to="/contacts">Contacts</Link>

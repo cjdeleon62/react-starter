@@ -1,0 +1,37 @@
+.about__container {
+  display: flex;
+  margin: 0 auto;
+  width: 70vw;
+  padding-top: calc(2rem + 1vw);
+
+  .about__image {
+    position: relative;
+    width: 40%;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+    }
+    &:before {
+      @include ratio(135%);
+      content: ' ';
+      display: block;
+    }
+  }
+
+  .about__description {
+    display: flex;
+    flex: 2 0 0;
+    margin-left: 2rem;
+    flex-direction: column;
+
+    p {
+      margin: 0;
+      line-height: 1.5;
+    }
+  }
+}

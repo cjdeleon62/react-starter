@@ -1,8 +1,9 @@
 import React from 'react';
+import WorkCardComponent from './WorkCardComponent';
 
 const WorksComponent = () => (
   <section>
-    This is the works component.
+    <WorkCardComponent />
   </section>
 );
 
