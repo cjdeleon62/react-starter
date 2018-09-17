@@ -1,9 +1,12 @@
 import React from 'react';
-import WorkCardComponent from './WorkCardComponent';
+import WorkCardComponent from './WorksCardComponent';
 
 const WorksComponent = () => (
-  <section>
-    <WorkCardComponent />
+  <section className="works">
+    <div className="works__row">
+      <WorkCardComponent />
+      <WorkCardComponent />
+    </div>
   </section>
 );
 
