@@ -6,10 +6,10 @@ import {
 import { render } from 'react-dom';
 // import HelloComponent from 'components/HelloComponent';
 import HeaderComponent from 'components/header/HeaderComponent';
+import FooterComponent from 'components/footer/FooterComponent';
 import LanderComponent from './components/lander/LanderComponent';
 import AboutComponent from './components/about/AboutComponent';
 import WorksComponent from './components/works/WorksComponent';
-import ContactsComponent from './components/contacts/ContactsComponent';
 
 import './styles/style.scss';
 
@@ -21,7 +21,7 @@ const App = () => (
         <Route exact path="/" component={LanderComponent} />
         <Route path="/about" component={AboutComponent} />
         <Route path="/my-works" component={WorksComponent} />
-        <Route path="/contacts" component={ContactsComponent} />
+        <FooterComponent />
       </Fragment>
     </Router>
   </div>
