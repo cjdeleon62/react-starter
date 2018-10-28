@@ -1,0 +1,38 @@
+.sidenav {
+  background: $primary;
+  display: none;
+  height: calc(100vh - 3rem + .5vmin);
+  overflow-x: hidden;
+  position: absolute;
+  top: calc(3rem + .5vmin);
+  transition: margin .5s ease-in-out;
+  width: 65vw;
+  z-index: 3;
+
+  ul {
+    display: block;
+    min-width: 65vw;
+  }
+
+  li {
+    padding: 1.5rem;
+  }
+
+  a {
+    color: #fff;
+  }
+}
+
+.sidenav--collapsed {
+  margin-left: -65vw;
+}
+
+.sidenav--open {
+  margin-left: 0;
+}
+
+@media all and (max-width: 1024px) {
+  .sidenav {
+    display: block;
+  }
+}

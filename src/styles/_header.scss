@@ -7,6 +7,10 @@
   position: absolute;
   width: 100%;
 
+  .header__menu {
+    display: none;
+  }
+
   .header__nav {
     align-items: center;
     display: flex;
@@ -28,5 +32,21 @@
      a {
       color: $text-primary;
      }
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .header {
+    .header__menu {
+      display: inline-block;
+
+      .fa-bars {
+        color: white;
+        font-size: 1.25rem;
+      }
+    }
+    .header__links {
+      display: none;
+    }
   }
 }
