@@ -5,8 +5,8 @@
   overflow-x: hidden;
   position: absolute;
   top: calc(3rem + .5vmin);
-  transition: margin .5s ease-in-out;
-  width: 65vw;
+  transition: left .5s ease-in-out;
+  width: 0vw;
   z-index: 3;
 
   ul {
@@ -24,11 +24,12 @@
 }
 
 .sidenav--collapsed {
-  margin-left: -65vw;
+  left: -65vw;
 }
 
 .sidenav--open {
-  margin-left: 0;
+  left: 0;
+  width: 65vw;
 }
 
 @media all and (max-width: 1024px) {

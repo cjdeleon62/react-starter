@@ -34,8 +34,8 @@ ul {
 }
 
 section {
-  padding: calc(3rem + .5vmin) 1rem 0;
-  height: calc(100vh - 2.5rem);
+  padding: calc(3rem + .5vmin) 1rem calc(3.5rem + .5vmin);
+  min-width: 300px;
 }
 
 .text__xl {

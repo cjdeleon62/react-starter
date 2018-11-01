@@ -2,6 +2,7 @@ import React from 'react';
 
 const WorksCardComponent = () => (
   <div className="works__card">
+    <h2 className="works__card__title">React Project</h2>
     <div className="works__card__image-container">
       <div />
     </div>

@@ -4,11 +4,17 @@
   color: $text-primary;
   height: calc(3rem + .5vmin);
   left: 0;
+  min-width: 300px;
   position: absolute;
   width: 100%;
+  z-index: 3;
 
   .header__menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
     display: none;
+    padding: .25rem;
   }
 
   .header__nav {

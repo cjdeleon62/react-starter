@@ -33,3 +33,18 @@
     line-height: 1.5;
   }
 }
+
+@media all and (max-width: 768px) {
+  .works {
+    .works__row {
+      align-items: center;
+      flex-direction: column;
+      margin-top: 0;
+    }
+
+    .works__card {
+      margin-top: 2rem;
+      width: 90%;
+    }
+  }
+}

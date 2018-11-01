@@ -1,13 +1,14 @@
 .about__container {
   display: flex;
+  height: 100%;
   margin: 0 auto;
-  width: 70vw;
   padding-top: calc(2rem + 1vw);
+  width: 70vw;
 
   .about__image {
     position: relative;
     margin-top: 1rem;
-    width: 40%;
+    min-width: 40%;
 
     img {
       position: absolute;
@@ -33,10 +34,35 @@
     p {
       margin: .75rem 0 0;
       line-height: 1.5;
+      text-align: justify;
     }
 
     .about__description--title {
       margin: 0;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .about__container {
+    flex-direction: column;
+    align-items: center;
+
+    .about__description {
+      margin-left: 0;
+      margin-top: 2rem;
+    }
+
+    .about__description--title {
+      text-align: center;
+    }
+  }
+}
+
+@media all and (max-width: 480px) {
+  .about__container {
+    .about__image {
+      min-width: 70%;
     }
   }
 }
